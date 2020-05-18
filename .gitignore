@@ -1,0 +1,7 @@
+node_modules
+yarn-error.log
+.nyc_output
+.env
+.vscode-janus-debug
+.vscode
+info.log
