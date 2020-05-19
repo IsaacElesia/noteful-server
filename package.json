@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
+	"engines": {
+		"node": "12.14.0"
+	},
 	"scripts": {
 		"test": "nyc mocha --require test/setup.js",
 		"dev": "nodemon src/server.js",
