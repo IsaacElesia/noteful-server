@@ -18,8 +18,8 @@ folderRouter
 			.then((folders) => res.json(folders.map((folder) => sanitize(folder))));
 	})
 	.post(dataParser, (req, res, next) => {
-		const { name } = req.body;
-		const folder_name = name;
+		const { folder_name } = req.body;
+		//const folder_name = name;
 		if (!folder_name) {
 			logger.error("Failed post : User didn't supply folder name");
 			res.status(400).json({ error: 'Folder Name is required' });

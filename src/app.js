@@ -21,7 +21,7 @@ app.use(morgan(morganOption));
 app.use(helmet());
 app.use(cors());
 
-/* app.use(function requireAuth(req, res, next) {
+app.use(function requireAuth(req, res, next) {
 	const authValue = req.get('Authorization') || ' ';
 
 	//verify bearer
@@ -36,7 +36,7 @@ app.use(cors());
 	}
 
 	next();
-}); */
+});
 
 // Routes
 
